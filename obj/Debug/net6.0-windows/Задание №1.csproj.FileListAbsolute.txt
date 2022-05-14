@@ -1,0 +1,31 @@
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1_MarkupCompile.cache
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1_MarkupCompile.lref
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\bin\Debug\net6.0-windows\Задание №1.exe
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\bin\Debug\net6.0-windows\Задание №1.deps.json
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\bin\Debug\net6.0-windows\Задание №1.runtimeconfig.json
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\bin\Debug\net6.0-windows\Задание №1.dll
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\bin\Debug\net6.0-windows\ref\Задание №1.dll
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\bin\Debug\net6.0-windows\Задание №1.pdb
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.g.resources
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.AssemblyInfo.cs
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.dll
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\ref\Задание №1.dll
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.pdb
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\Задание №1.genruntimeconfig.cache
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageCone\PageCone.g.cs
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageCylinder\PageCylinder.g.cs
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageSphere\PageSphere.g.cs
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageTruncatedCone\PageTruncatedCone.g.cs
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageCone\PageCone.baml
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageCylinder\PageCylinder.baml
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageSphere\PageSphere.baml
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageTruncatedCone\PageTruncatedCone.baml
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageMenu\PageMenu.g.cs
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\PageMenu\PageMenu.baml
