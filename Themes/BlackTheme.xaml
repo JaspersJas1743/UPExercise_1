@@ -177,6 +177,22 @@
                 <Setter Property="HorizontalAlignment" Value="Right"/>
                 <Setter Property="Foreground" Value="White"/>
                 <Setter Property="Background" Value="Black"/>
+                <Setter Property="SelectionBrush" Value="White"/>
+                <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border CornerRadius="5" BorderBrush="White" BorderThickness="1">
+                            <ScrollViewer x:Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="BorderBrush" Value="White"/>
+                                <Setter Property="BorderThickness" Value="1"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+                </Setter>
             </Style.Setters>
         </Style>
 

@@ -20,7 +20,6 @@ namespace Задание__1
         public Sphere()
         {
             InitializeComponent();
-            Application.Current.MainWindow.Title = "Сфера";
             RadiusBox.Focus();
         }
 
@@ -44,6 +43,7 @@ namespace Задание__1
             ResourceDictionary resDict = Application.LoadComponent(uri) as ResourceDictionary;
             Application.Current.Resources.Clear();
             Application.Current.Resources.MergedDictionaries.Add(resDict);
+            RadiusBox.Focus();
         }
 
         private void ResultButton(object sender, RoutedEventArgs e)

@@ -44,6 +44,7 @@ namespace Задание__1
             ResourceDictionary resDict = Application.LoadComponent(uri) as ResourceDictionary;
             Application.Current.Resources.Clear();
             Application.Current.Resources.MergedDictionaries.Add(resDict);
+            RadiusBox.Focus();
         }
 
         private void ResultButton(object sender, RoutedEventArgs e)
