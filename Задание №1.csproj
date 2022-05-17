@@ -8,4 +8,30 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\Sphere.png"/>
+    <None Remove="Images\Cone.png"/>
+    <None Remove="Images\TruncatedCone.png"/>
+    <None Remove="Images\Cylinder.png"/>
+    <None Remove="Images\IconMainWindow.png"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Sphere.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Cone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\TruncatedCone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Cylinder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\IconMainWindow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
 </Project>

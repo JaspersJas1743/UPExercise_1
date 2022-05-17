@@ -3,19 +3,24 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Задание__1" d:DesignHeight="180" d:DesignWidth="200"
-        mc:Ignorable="d" Height="180" Width="200" WindowHeight="180" WindowWidth="200" >
-    <Grid>
-        <TextBlock Text="Выберите фигуру вращения:" FontSize="14" Height="40" Width="160" TextAlignment="Center"
-            TextWrapping="Wrap" Margin="0 10 0 0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        xmlns:local="clr-namespace:Задание__1" Height="200" Width="200" 
+        mc:Ignorable="d">
+    <Grid MouseDown="Drag" Style="{DynamicResource ThemeGrid}">
+        <TextBlock Style="{DynamicResource ThemeText}" Text="Выберите фигуру вращения:" Height="40" Width="160" TextAlignment="Center"
+            TextWrapping="Wrap" Margin="0 30 0 0" HorizontalAlignment="Center"/>
+        <TextBlock Style="{DynamicResource ThemeText}" Text="220_Смирнов_ПР1" Height="25" Width="100" TextAlignment="Center"
+            TextWrapping="Wrap" HorizontalAlignment="Left" FontSize="10"/>
 
-        <Button Name="Cone" Content="Конус" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 60 0 0"    
-            Click="ClickCone" Height="25" Width="140" ToolTip="Перейти на страницу для рассчётов основных характеристик конуса"/>
-        <Button Name="Sphere" Content="Сфера" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 90 0 0"
-            Click="ClickSphere" Height="25" Width="140" ToolTip="Перейти на страницу для рассчётов основных характеристик сферы"/>
-        <Button Name="Cylinder" Content="Цилиндр" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 120 0 0"
-            Click="ClickCylinder" Height="25" Width="140" ToolTip="Перейти на страницу для рассчётов основных характеристик цилиндра"/>
-        <Button Name="TruncatedCone" Content="Усеченный конус" FontSize="14" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0 150 0 0"
-            Click="ClickTruncatedCone" Height="25" Width="140" ToolTip="Перейти на страницу для рассчётов основных характеристик усеченного конуса"/>
+        <Button Style="{DynamicResource ThemeButton}" Name="Cone" Content="Конус" HorizontalAlignment="Center" Margin="0 80 0 0"    
+            Click="ClickCone" Width="140" ToolTip="Перейти на страницу для рассчётов основных характеристик конуса"/>
+        <Button Style="{DynamicResource ThemeButton}" Name="Sphere" Content="Сфера" HorizontalAlignment="Center" Margin="0 110 0 0"
+            Click="ClickSphere" Width="140" ToolTip="Перейти на страницу для рассчётов основных характеристик сферы"/>
+        <Button Style="{DynamicResource ThemeButton}" Name="Cylinder" Content="Цилиндр" HorizontalAlignment="Center" Margin="0 140 0 0"
+            Click="ClickCylinder" Width="140" ToolTip="Перейти на страницу для рассчётов основных характеристик цилиндра"/>
+        <Button Style="{DynamicResource ThemeButton}" Name="TruncatedCone" Content="Усеченный конус" HorizontalAlignment="Center" Margin="0 170 0 0"
+            Click="ClickTruncatedCone" Width="140" ToolTip="Перейти на страницу для рассчётов основных характеристик усеченного конуса"/>
+        <Button Style="{DynamicResource ThemeExit}" Click="Exit"/>
+        <Button Style="{DynamicResource ThemeDeactivate}" Click="Deact"/>
+        <Button Style="{DynamicResource ThemeNew}" Click="NewTheme"/>
     </Grid>
 </Page>

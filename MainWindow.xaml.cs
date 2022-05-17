@@ -17,6 +17,8 @@ namespace Задание__1
 {
     public partial class MainWindow : Window
     {
+        public static MainWindow Window;
+
         public MainWindow()
         {
             InitializeComponent();

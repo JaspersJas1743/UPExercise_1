@@ -17,9 +17,36 @@ namespace Задание__1
 {
     public partial class Cylinder : Page
     {
-        public Cylinder() { InitializeComponent(); }
+        public Cylinder()
+        {
+            InitializeComponent();
+            Application.Current.MainWindow.Title = "Цилиндр";
+            RadiusBox.Focus();
+        }
+
+        private void Exit(object sender, RoutedEventArgs e) { Application.Current.Shutdown(); }
+
+        private void Deact(object sender, RoutedEventArgs e) { Application.Current.MainWindow.WindowState = WindowState.Minimized; }
 
         private void BackButtonCylinder(object sender, RoutedEventArgs e) { NavigationService.Navigate(new Menu()); }
+        
+        private void Drag(object sender, RoutedEventArgs e)
+        {
+            if (Mouse.LeftButton == MouseButtonState.Pressed) { Application.Current.MainWindow.DragMove(); }
+        }
+
+
+        private void NewTheme(object sender, RoutedEventArgs e)
+        {
+            Uri uri;
+            if (!Theme.isDarkTheme) { uri = new Uri(@"..\Themes\BlackTheme.xaml", UriKind.Relative); }
+            else { uri = new Uri(@"..\Themes\LightTheme.xaml", UriKind.Relative); }
+            Theme.isDarkTheme = !(Theme.isDarkTheme);
+            ResourceDictionary resDict = Application.LoadComponent(uri) as ResourceDictionary;
+            Application.Current.Resources.Clear();
+            Application.Current.Resources.MergedDictionaries.Add(resDict);
+        }
+
         private void ResultButton(object sender, RoutedEventArgs e)
         {
             try
@@ -30,18 +57,12 @@ namespace Задание__1
                 {
                     radius = Convert.ToDouble(RadiusBox.Text);
                     if (radius < 0) { throw new Exception(); }
-                } catch { 
-                    MessageBox.Show("Некорректно введённый радиус!", "Ошибка преобразования", MessageBoxButton.OK, MessageBoxImage.Error);
-                    throw new Exception(); 
-                }
+                } catch { throw new Exception("Некорректно введённый радиус!"); }
                 try
                 {
                     height = Convert.ToDouble(HeightBox.Text);
                     if (height < 0) { throw new Exception(); }
-                } catch { 
-                    MessageBox.Show("Некорректно введённая высота!", "Ошибка преобразования", MessageBoxButton.OK, MessageBoxImage.Error);
-                    throw new Exception(); 
-                }
+                } catch { throw new Exception("Некорректно введённая высота!"); }
                 try
                 {
                     accuracy = Convert.ToInt32(AccuracyBox.Text);
@@ -52,7 +73,7 @@ namespace Задание__1
                 ResultSquareSideBox.Text = Math.Round(2 * Math.PI * radius * height, accuracy).ToString();
                 ResultSquareBox.Text = Math.Round(2 * Math.PI * radius * (radius + height), accuracy).ToString();
                 ResultVolumeBox.Text = Math.Round(Math.PI * Math.Pow(radius, 2) * height, accuracy).ToString();
-            } catch {}
+            } catch (Exception Ex) { MessageBox.Show(Ex.Message, "Ошибка преобразования", MessageBoxButton.OK, MessageBoxImage.Error); }
             RadiusBox.Focus();
         }
     }

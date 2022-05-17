@@ -5,45 +5,35 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Задание__1" Height="385" Width="450"
-        mc:Ignorable="d" WindowHeight="385" WindowWidth="500" 
-        d:DesignHeight="385" d:DesignWidth="500">
-    <Grid>
-        <Image Source="https://carscomfort.ru/800/600/http/simple-math.ru/images/volume-cylinder.jpg" Margin="20 0 0 0" Height="200"
+        mc:Ignorable="d">
+    <Grid MouseDown="Drag" Style="{DynamicResource ThemeGrid}">
+        <Image Source="..\Images\Cylinder.png" Margin="20 0 0 0" Height="200"
             Width="200" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
-        <Button Name="CylinderBack" Click="BackButtonCylinder" Content="Назад" Height="25" Width="100" FontSize="14"
-            Margin="0 350 30 0" HorizontalAlignment="Right" VerticalAlignment="Top" ToolTip="Вернуться в основное меню"/>
-        <Button Name="GetResult" Click="ResultButton" Content="Вычислить" Height="25" Width="100" FontSize="14"
-            Margin="0 150 30 0" HorizontalAlignment="Right" VerticalAlignment="Top" ToolTip="Вычислить основные харакетристики цилиндра"/>
+        <Button Style="{DynamicResource ThemeButton}" Name="CylinderBack" Click="BackButtonCylinder" Content="Назад" Width="100"
+            Margin="0 350 30 0" ToolTip="Вернуться в основное меню"/>
+        <Button Style="{DynamicResource ThemeButton}" Name="GetResult" Click="ResultButton" Content="Вычислить" Width="100"
+            Margin="0 150 65 0" ToolTip="Вычислить основные харакетристики цилиндра"/>
+        <Button Style="{DynamicResource ThemeExit}" Click="Exit"/>
+        <Button Style="{DynamicResource ThemeDeactivate}" Click="Deact"/>
+        <Button Style="{DynamicResource ThemeNew}" Click="NewTheme"/>
         
-        <TextBlock Text="Радиус R:" FontSize="14" Height="25" Width="70"
-            Margin="0 30 135 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBlock Text="Высота H:" FontSize="14" Height="25" Width="70"
-            Margin="0 70 135 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBlock Text="Точность:" FontSize="14" Height="25" Width="70"
-            Margin="0 110 135 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBlock Text="S осн.:" FontSize="14" Height="25" Width="50"
-            Margin="0 190 135 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBlock Text="S бок.:" FontSize="14" Height="25" Width="50"
-            Margin="0 230 135 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBlock Text="S цил.:" FontSize="14" Height="25" Width="50"
-            Margin="0 270 135 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBlock Text="V цил.:" FontSize="14" Height="25" Width="50"
-            Margin="0 310 135 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-
-        <TextBox Name="RadiusBox" MaxLength="10" Width="100" Height="20" ToolTip="Поле ввода радиуса основания цилиндра"
-            Margin="0 30 30 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBox Name="HeightBox" MaxLength="10" Width="100" Height="20" ToolTip="Поле ввода высоты цилиндра"
-            Margin="0 70 30 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBox Name="AccuracyBox" MaxLength="1" Width="100" Height="20" ToolTip="Поле ввода точности рассчётов (округляет до введённого кол-ва знаков дробной части)"
-            Margin="0 110 30 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBox Name="ResultSquareBaseBox" MaxLength="256" Width="100" Height="20" IsReadOnly="True" ToolTip="Площадь основания цилиндра"
-            Margin="0 190 30 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBox Name="ResultSquareSideBox" MaxLength="256" Width="100" Height="20" IsReadOnly="True" ToolTip="Площадь боковой стороны цилиндра"
-            Margin="0 230 30 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBox Name="ResultSquareBox" MaxLength="256" Width="100" Height="20" IsReadOnly="True" ToolTip="Площадь полной поверхности цилиндра"
-            Margin="0 270 30 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
-        <TextBox Name="ResultVolumeBox" MaxLength="256" Width="100" Height="20" IsReadOnly="True" ToolTip="Объём цилиндра"
-            Margin="0 310 30 0" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        <TextBlock Text="Радиус R:" Style="{DynamicResource ThemeText}" Margin="0 30 135 0" />
+        <TextBlock Text="Высота H:" Style="{DynamicResource ThemeText}" Margin="0 70 135 0"/>
+        <TextBlock Text="Точность:" Style="{DynamicResource ThemeText}" Margin="0 110 135 0"/>
+        <TextBlock Text="S осн.:" Style="{DynamicResource ThemeText}" Width="50" Margin="0 190 135 0"/>
+        <TextBlock Text="S бок.:" Style="{DynamicResource ThemeText}" Width="50" Margin="0 230 135 0"/>
+        <TextBlock Text="S цил.:" Style="{DynamicResource ThemeText}" Width="50" Margin="0 270 135 0"/>
+        <TextBlock Text="V цил.:" Style="{DynamicResource ThemeText}" Width="50" Margin="0 310 135 0"/>
+        <TextBlock Style="{DynamicResource ThemeText}" Text="220_Смирнов_ПР1" Height="25" Width="100" TextAlignment="Center"
+            TextWrapping="Wrap" HorizontalAlignment="Left" FontSize="10"/>
+            
+        <TextBox Style="{DynamicResource ThemeBox}" Name="RadiusBox" MaxLength="10" ToolTip="Поле ввода радиуса основания цилиндра" Margin="0 30 30 0"/>
+        <TextBox Style="{DynamicResource ThemeBox}" Name="HeightBox" MaxLength="10" ToolTip="Поле ввода высоты цилиндра" Margin="0 70 30 0"/>
+        <TextBox Style="{DynamicResource ThemeBox}" Name="AccuracyBox" MaxLength="1" ToolTip="Поле ввода точности рассчётов (округляет до введённого кол-ва знаков дробной части)" Margin="0 110 30 0"/>
+        <TextBox Style="{DynamicResource ThemeBox}" Name="ResultSquareBaseBox" IsReadOnly="True" ToolTip="Площадь основания цилиндра = πr²" Margin="0 190 30 0"/>
+        <TextBox Style="{DynamicResource ThemeBox}" Name="ResultSquareSideBox" IsReadOnly="True" ToolTip="Площадь боковой стороны цилиндра = 2πrh" Margin="0 230 30 0"/>
+        <TextBox Style="{DynamicResource ThemeBox}" Name="ResultSquareBox" IsReadOnly="True" ToolTip="Площадь полной поверхности цилиндра = 2πr(r+h)" Margin="0 270 30 0"/>
+        <TextBox Style="{DynamicResource ThemeBox}" Name="ResultVolumeBox" IsReadOnly="True" ToolTip="Объём цилиндра = πhr²" Margin="0 310 30 0"/>
     </Grid>
 </Page>

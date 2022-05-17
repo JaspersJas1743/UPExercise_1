@@ -1,20 +1,20 @@
 ﻿Задание №1
-1.0.0.0
+
 
 winexe
 C#
 .cs
-c:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\obj\Debug\net6.0-windows\
 Задание__1
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-c:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\App.xaml
-6-935351568
+C:\Users\user\Desktop\2 курс\Учебная практика\Прикладное программирование\Задание №1\App.xaml
+8-1414530295
 
-10955387333
-194372043051
-MainWindow.xaml;PageCone\PageCone.xaml;PageCylinder\PageCylinder.xaml;PageMenu\PageMenu.xaml;PageSphere\PageSphere.xaml;PageTruncatedCone\PageTruncatedCone.xaml;
+8396922021
+1941142463650
+MainWindow.xaml;PageCone\PageCone.xaml;PageCylinder\PageCylinder.xaml;PageMenu\PageMenu.xaml;PageSphere\PageSphere.xaml;PageTruncatedCone\PageTruncatedCone.xaml;Themes\BlackTheme.xaml;Themes\LightTheme.xaml;
 
-True
+False
 
