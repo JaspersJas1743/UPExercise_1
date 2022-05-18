@@ -33,24 +33,12 @@ namespace Задание__1
         
         private void ClickSphere(object sender, RoutedEventArgs e) { NavigationService.Navigate(new Sphere()); }
         
-        private void Drag(object sender, RoutedEventArgs e)
-        {
-            if (Mouse.LeftButton == MouseButtonState.Pressed) { Application.Current.MainWindow.DragMove(); }
-        }
+        private void Drag(object sender, RoutedEventArgs e) { MainWindow.MouseDrug(); }
 
         private void ClickTruncatedCone(object sender, RoutedEventArgs e) { NavigationService.Navigate(new TruncatedCone()); }
         
         private void ClickCylinder(object sender, RoutedEventArgs e) { NavigationService.Navigate(new Cylinder()); }
 
-        private void NewTheme(object sender, RoutedEventArgs e)
-        {
-            Uri uri;
-            if (!Theme.isDarkTheme) { uri = new Uri(@"..\Themes\BlackTheme.xaml", UriKind.Relative); }
-            else { uri = new Uri(@"..\Themes\LightTheme.xaml", UriKind.Relative); }
-            Theme.isDarkTheme = !(Theme.isDarkTheme);
-            ResourceDictionary? resDict = Application.LoadComponent(uri) as ResourceDictionary;
-            Application.Current.Resources.Clear();
-            Application.Current.Resources.MergedDictionaries.Add(resDict);
-        }
+        private void NewTheme(object sender, RoutedEventArgs e) { MainWindow.ResetTheme(); }
     }
 }

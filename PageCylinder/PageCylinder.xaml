@@ -4,20 +4,22 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Задание__1" Height="385" Width="450"
+        xmlns:local="clr-namespace:Задание__1" Height="375" Width="450"
         mc:Ignorable="d">
     <Grid MouseDown="Drag" Style="{DynamicResource ThemeGrid}">
-        <Image Source="..\Images\Cylinder.png" Margin="20 0 0 0" Height="200"
-            Width="200" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Image Source="..\Images\Cylinder.png" Margin="20 0 0 0" Height="250"
+            Width="250" HorizontalAlignment="Left" VerticalAlignment="Center"/>
 
         <Button Style="{DynamicResource ThemeButton}" Name="CylinderBack" Click="BackButtonCylinder" Content="Назад" Width="100"
-            Margin="0 350 30 0" ToolTip="Вернуться в основное меню"/>
+            Margin="0 340 30 0" ToolTip="Вернуться в основное меню"/>
         <Button Style="{DynamicResource ThemeButton}" Name="GetResult" Click="ResultButton" Content="Вычислить" Width="100"
             Margin="0 150 65 0" ToolTip="Вычислить основные харакетристики цилиндра"/>
         <Button Style="{DynamicResource ThemeExit}" Click="Exit"/>
         <Button Style="{DynamicResource ThemeDeactivate}" Click="Deact"/>
         <Button Style="{DynamicResource ThemeNew}" Click="NewTheme"/>
         
+        <ToggleButton Width="40" Height="40" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+
         <TextBlock Text="Радиус R:" Style="{DynamicResource ThemeText}" Margin="0 30 135 0" />
         <TextBlock Text="Высота H:" Style="{DynamicResource ThemeText}" Margin="0 70 135 0"/>
         <TextBlock Text="Точность:" Style="{DynamicResource ThemeText}" Margin="0 110 135 0"/>

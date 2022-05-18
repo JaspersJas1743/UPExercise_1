@@ -29,20 +29,11 @@ namespace Задание__1
         
         private void Deact(object sender, RoutedEventArgs e) { Application.Current.MainWindow.WindowState = WindowState.Minimized; }
         
-        private void Drag(object sender, RoutedEventArgs e)
-        {
-            if (Mouse.LeftButton == MouseButtonState.Pressed) { Application.Current.MainWindow.DragMove(); }
-        }
+        private void Drag(object sender, RoutedEventArgs e) { MainWindow.MouseDrug(); }
 
         private void NewTheme(object sender, RoutedEventArgs e)
         {
-            Uri uri;
-            if (!Theme.isDarkTheme) { uri = new Uri(@"..\Themes\BlackTheme.xaml", UriKind.Relative); }
-            else { uri = new Uri(@"..\Themes\LightTheme.xaml", UriKind.Relative); }
-            Theme.isDarkTheme = !(Theme.isDarkTheme);
-            ResourceDictionary? resDict = Application.LoadComponent(uri) as ResourceDictionary;
-            Application.Current.Resources.Clear();
-            Application.Current.Resources.MergedDictionaries.Add(resDict);
+            MainWindow.ResetTheme();
             RadiusMinBox.Focus();
         }
 
