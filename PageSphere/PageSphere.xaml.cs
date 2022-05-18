@@ -40,7 +40,7 @@ namespace Задание__1
             if (!Theme.isDarkTheme) { uri = new Uri(@"..\Themes\BlackTheme.xaml", UriKind.Relative); }
             else { uri = new Uri(@"..\Themes\LightTheme.xaml", UriKind.Relative); }
             Theme.isDarkTheme = !(Theme.isDarkTheme);
-            ResourceDictionary resDict = Application.LoadComponent(uri) as ResourceDictionary;
+            ResourceDictionary? resDict = Application.LoadComponent(uri) as ResourceDictionary;
             Application.Current.Resources.Clear();
             Application.Current.Resources.MergedDictionaries.Add(resDict);
             RadiusBox.Focus();
